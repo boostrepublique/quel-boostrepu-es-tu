@@ -13,10 +13,12 @@ var survey = function(my) {
 
   my.current = my.current || 0;
   my.total = my.total || 0;
+  my.correct = my.correct || 0;
 
   /* Public */
   var next;
   var current;
+  var add_correct_answer;
 
   var that = {};
 
@@ -31,8 +33,13 @@ var survey = function(my) {
     return my.current;
   };
 
+  add_correct_answer = function() {
+    my.correct++;
+  };
+
   that.next = next;
   that.current = current;
+  that.add_correct_answer = add_correct_answer;
 
   return that;
 };
