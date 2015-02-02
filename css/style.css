@@ -198,6 +198,13 @@ h1 img {
   margin-bottom: 50px;
 }
 
+.more .answers:nth-child(2) {
+  margin-bottom: inherit;
+}
+.more .answers:nth-child(3) {
+  margin-bottom: 50px;
+}
+
 .section-validate .answer {
   display: none;
   font-size: 2em;
@@ -218,6 +225,15 @@ h1 img {
 
 .section-validate .image img {
   max-width: 500px;
+  -webkit-box-shadow: 0px 0px 0px 5px #ddd;
+     -moz-box-shadow: 0px 0px 0px 5px #ddd;
+      -ms-box-shadow: 0px 0px 0px 5px #ddd;
+          box-shadow: 0px 0px 0px 5px #ddd;
+}
+
+.section-validate .image iframe {
+  width: 560px;
+  height: 315px;
   -webkit-box-shadow: 0px 0px 0px 5px #ddd;
      -moz-box-shadow: 0px 0px 0px 5px #ddd;
       -ms-box-shadow: 0px 0px 0px 5px #ddd;
@@ -286,6 +302,10 @@ h1 img {
     width: 100%;
   }
 
+  .home .logo {
+    margin-bottom: 50px;
+  }
+
   .home .logos {
     padding-bottom: 55px;
   }
@@ -312,15 +332,6 @@ h1 img {
     margin-bottom: 50px;
   }
 
-  .results h1 {
-    font-size: 2em;
-  }
-
-  .results h1 i {
-    font-size: 0.8em;
-    line-height: 0.8em;
-  }
-
   h1 {
     font-size: 2em;
     margin-top: 50px !important;
@@ -336,6 +347,13 @@ h1 img {
   }
 
   .answers:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  .more .answers:nth-child(2) {
+    margin-bottom: inherit;
+  }
+  .more .answers:nth-child(3) {
     margin-bottom: 20px;
   }
 
@@ -358,6 +376,20 @@ h1 img {
        -moz-border-radius: 0;
         -ms-border-radius: 0;
             border-radius: 0;
+  }
+
+  .section-validate .image img {
+    max-width: none;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 0px 5px #ddd;
+       -moz-box-shadow: 0px 0px 0px 5px #ddd;
+        -ms-box-shadow: 0px 0px 0px 5px #ddd;
+            box-shadow: 0px 0px 0px 5px #ddd;
+  }
+
+  .section-validate .image iframe {
+    width: 100%;
+    height: 315px;
   }
 
   .results {
