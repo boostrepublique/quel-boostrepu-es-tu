@@ -19,6 +19,7 @@ var survey = function(my) {
   var next;
   var current;
   var add_correct_answer;
+  var result;
 
   var that = {};
 
@@ -37,9 +38,14 @@ var survey = function(my) {
     my.correct++;
   };
 
+  result = function() {
+    return my.correct;
+  };
+
   that.next = next;
   that.current = current;
   that.add_correct_answer = add_correct_answer;
+  that.result = result;
 
   return that;
 };
