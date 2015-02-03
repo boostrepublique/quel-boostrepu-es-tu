@@ -14,8 +14,8 @@
     <title>Teste tes connaissances #boostrépu !</title>
     <meta content='Teste tes connaissances #boostrépu !' property='og:title'>
     <meta content='website' property='og:type'>
-    <meta content='http://boostrepublique.github.io/test-connaissances' property='og:url'>
-    <meta content='http://boostrepublique.github.io/test-connaissances/images/og_image.jpg' property='og:image'>
+    <meta content='http://boostrepublique.github.io/quel-boost-repu-es-tu' property='og:url'>
+    <meta content='http://boostrepublique.github.io/quel-boost-repu-es-tu/images/og_image.jpg' property='og:image'>
     <meta property="og:locale" content="fr_FR"/>
     <meta property="og:type" content="website"/>
     <meta property="og:site_name" content="Teste tes connaissances #boostrépu !"/>
@@ -69,7 +69,7 @@
             <h1 class="fall">Teste tes connaissances #boostrépu !</h1>
           </div>
         </div>
-        <div class="row logo">
+        <div class="row logo fade">
           <div class="col-lg-12">
             <img src="images/republique.jpg"/>
           </div>
@@ -827,7 +827,7 @@
           <div class="row answers">
             <div class="col-xs-6">
               <a href="#" class="btn btn-info">
-                <span>3.</span> <p>Quelle place ? Quel soir ? Je comprends rien</p>
+                <span>3.</span> <p>Quelle place ? Quel soir ?<br/>Je comprends rien</p>
               </a>
             </div>
             <div class="col-xs-6">
@@ -1082,6 +1082,7 @@
         </h1>
 
         <p class="fade result result-4">
+          <img src="images/president.png"/><br/>
           Bravo !<br/>
           Tu es un membre actif de #boostRépublique et aucun run n’a de secret pour toi.<br/>
           Tu portes fièrement ton blason et ton rêve secret est de devenir co-leader.<br/>
@@ -1089,16 +1090,19 @@
           Tu seras là mercredi prochain, comme tous les mercredis.
         </p>
         <p class="fade result result-3">
+          <img src="images/colonel.png"/><br/>
           Tes connaissances sont bonnes, tu fais partie intégrante de #boostRépublique et tes chaussures sont marqués du bitume, elles sentent le Canal de l’Ourcq, la piste et la sueur.<br/>
           Encore un peu d’effort et tu pourras passer co-leader.<br/>
           On t’attend mercredi prochain, 20h.
         </p>
         <p class="fade result result-2">
+          <img src="images/tortue.png"/><br/>
           Si tous les chemins mènent à répu, tu sembles t’être égaré en chemin.<br/>
           Pas grave, un peu plus de motivation et d’assiduité aux runs du mercredi devraient pouvoir te donner la moyenne.<br/>
           On t’attend au prochain.
         </p>
         <p class="fade result result-1">
+          <img src="images/tortue.png"/><br/>
           Si ce test était une course, tu arriverais bon dernier.<br/>
           Tu manques visiblement d'entraînement et #boostRépublique n’est pour toi qu’un hashtag de plus.<br/>
           On te conseille de venir mercredi prochain à 20h à l’Eventail pour rattraper ton retard.<br/>
@@ -1106,8 +1110,11 @@
         </p>
 
         <p>
-          <iframe id="fb" src="http://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fboostrepublique.github.io%2Fle-test&layout=button&appId=311801709006377" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowTransparency="true"></iframe>
-          <a href="https://twitter.com/share" class="twitter-share-button" data-text="Je suis #boostrepublique ! Quel #boostquartier es-tu ? Fais le test psycho : http://boostrepublique.com/le-test" data-count="none" data-dnt="true">Tweet</a>  
+          <iframe id="fb" src="http://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fboostrepublique.github.io%2Fquel-boost-repu-es-tu&layout=button&appId=311801709006377" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowTransparency="true"></iframe>
+          <a href="https://twitter.com/share" class="twitter-share-button result result-4" data-text="Je suis Président de la République ! Teste tes connaissances #boostrepublique : http://boostrepublique.com/quel-boost-repu-es-tu" data-count="none" data-dnt="true">Tweet</a>
+          <a href="https://twitter.com/share" class="twitter-share-button result result-3" data-text="Je suis Colonel de la Semelle ! Teste tes connaissances #boostrepublique : http://boostrepublique.com/quel-boost-repu-es-tu" data-count="none" data-dnt="true">Tweet</a>
+          <a href="https://twitter.com/share" class="twitter-share-button result result-2" data-text="Je suis Tortue de Répu ! Teste tes connaissances #boostrepublique : http://boostrepublique.com/quel-boost-repu-es-tu" data-count="none" data-dnt="true">Tweet</a>
+          <a href="https://twitter.com/share" class="twitter-share-button result result-1" data-text="Je suis Tortue de Répu ! Teste tes connaissances #boostrepublique : http://boostrepublique.com/quel-boost-repu-es-tu" data-count="none" data-dnt="true">Tweet</a>
         </p>
       </div>
     </div>
@@ -1118,6 +1125,16 @@
     <script src="js/script.js"></script>
 
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-59280747-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 
     <!--[if lt IE 7 ]>
       <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>

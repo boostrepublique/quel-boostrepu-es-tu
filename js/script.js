@@ -107,11 +107,7 @@ var animate_section = function(show, validate, cb_) {
         'opacity': 1
       }, 100);
 
-      setTimeout(function() {
-        jQuery('.section:visible .logos img').animate({
-          'opacity': .25
-        }, 1000);
-      }, 500);
+      jQuery('.section:visible .logos img, .section:visible .logo').fadeIn();
 
       if(typeof cb_ === 'function') {
         cb_();
@@ -120,10 +116,11 @@ var animate_section = function(show, validate, cb_) {
     });
   }
   else if(!show && validate) {
-    jQuery('.section:visible .fade, .section:visible .validate, .section:visible .logos img').animate({
+    jQuery('.section:visible .fade, .section:visible .validate').animate({
       'opacity': 0
     }, 500, function() {
       if(typeof cb_ === 'function') {
+        jQuery('.section:visible .logos img, .section:visible .logo').fadeOut();
         jQuery('.section:visible .fade').hide();
         cb_();
         cb_ = function() {};
@@ -142,9 +139,10 @@ var animate_section = function(show, validate, cb_) {
       }
     });
 
-    jQuery('.section:visible .fade, .section:visible .validate, .section:visible .logos img').animate({
+    jQuery('.section:visible .fade, .section:visible .validate').animate({
       'opacity': 0
     }, 500);
+    jQuery('.section:visible .logos img, .section:visible .logo').fadeOut();
   }
 };
 
