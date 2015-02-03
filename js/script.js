@@ -107,7 +107,7 @@ var animate_section = function(show, validate, cb_) {
         'opacity': 1
       }, 100);
 
-      jQuery('.section:visible .logos img, .section:visible .logo').fadeIn();
+      jQuery('.section:visible .logos img').fadeIn();
 
       if(typeof cb_ === 'function') {
         cb_();
@@ -120,7 +120,7 @@ var animate_section = function(show, validate, cb_) {
       'opacity': 0
     }, 500, function() {
       if(typeof cb_ === 'function') {
-        jQuery('.section:visible .logos img, .section:visible .logo').fadeOut();
+        jQuery('.section:visible .logos img').fadeOut();
         jQuery('.section:visible .fade').hide();
         cb_();
         cb_ = function() {};
@@ -142,7 +142,7 @@ var animate_section = function(show, validate, cb_) {
     jQuery('.section:visible .fade, .section:visible .validate').animate({
       'opacity': 0
     }, 500);
-    jQuery('.section:visible .logos img, .section:visible .logo').fadeOut();
+    jQuery('.section:visible .logos img').fadeOut();
   }
 };
 
